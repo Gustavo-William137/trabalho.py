@@ -8,10 +8,10 @@ Nesse projeto iremos coletar dados de filmes tirados do site The Movie Database 
 # O que é?
 Este projeto é um script em Python que acessa o site The Movie Database (TMDb) e coleta automaticamente informações públicas sobre filmes.
 Com o uso de web scraping (via BeautifulSoup ou Selenium), os dados são extraídos, tratados com Pandas e exportados para um arquivo .csv, pronto para ser analisado em planilhas ou softwares de BI.
-# Por Que?
+# Por que?
 A proposta é praticar automação e análise de dados com Python.
 Além disso, organizar listas de filmes em .csv facilita consultas rápidas, criação de relatórios e desenvolvimento de dashboards sobre o universo do cinema.
-# Quem Participa? 
+# Quem participa? 
 O projeto foi desenvolvido como exercício acadêmico, mas pode ser útil para:
 
 Estudantes e desenvolvedores que querem aprender scraping e manipulação de dados.
