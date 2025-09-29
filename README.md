@@ -3,7 +3,7 @@ Nesse projeto iremos coletar dados de filmes tirados do site The Movie Database 
 # Integrantes
 - Gustavo William Dos Santos
 - Gabriel Henrique Ursulino Alves
-- Tayná Santana
+- Tayná Santos Santana
 
 # O que é?
 Este projeto é um script em Python que acessa o site The Movie Database (TMDb) e coleta automaticamente informações públicas sobre filmes.
