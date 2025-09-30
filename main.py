@@ -14,22 +14,18 @@ def get_movies():
         return []
 
     soup = BeautifulSoup(response.text, "html.parser")
-    movie_cards = soup.select("div.card")
+    movie_cards = soup.select("div.card.style_1")
     print(f"{len(movie_cards)} filmes encontrados.")
 
     movies_data = []
 
     for idx, card in enumerate(movie_cards, start=1):
         title_elem = card.select_one("h2 a")
-        year_elem = card.select_one("span.release_date")
-
         title = title_elem.text.strip() if title_elem else "N/A"
-        year = year_elem.text.strip() if year_elem else "N/A"
 
         movies_data.append({
             "Posição": idx,
-            "Título": title,
-            "Ano": year
+            "Título": title
         })
 
     return movies_data
@@ -44,3 +40,5 @@ if __name__ == "__main__":
         print("Arquivo 'tmdb_movies.csv' gerado com sucesso!")
     else:
         print("Nenhum filme foi coletado.")
+
+
